@@ -1,7 +1,7 @@
 import tkinter as tk
 import getpass
 
-#find the pc username
+#find the pc username and storing it in a variable
 username = getpass.getuser()
 
 #creating the window
