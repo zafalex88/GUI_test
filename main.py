@@ -1,4 +1,8 @@
 import tkinter as tk
+import getpass
+
+#find the pc username
+username = getpass.getuser()
 
 #creating the window
 root = tk.Tk(className='square root', useTk=1)
@@ -6,13 +10,17 @@ canvas1 = tk.Canvas(root, width= 500, height=400)
 canvas1.pack()
 
 #creating labels
-label1 = tk.Label(root, text="Calculate The Square Root")
+label1 = tk.Label(root, text="Hello, " + username + "!")
 label1.config(font=('verdana', 18))
-canvas1.create_window(250, 40, window=label1)
+canvas1.create_window(250, 30, window=label1)
 
-label2 = tk.Label(root, text='Enter any number: ')
-label2.config(font=('verdana', 12))
-canvas1.create_window(250, 120, window=label2)
+label2 = tk.Label(root, text="Calculate The Square Root")
+label2.config(font=('verdana', 18))
+canvas1.create_window(250, 70, window=label2)
+
+label3 = tk.Label(root, text='Enter any number: ')
+label3.config(font=('verdana', 12))
+canvas1.create_window(250, 120, window=label3)
 
 #creating the entry box
 entry = tk.Entry(root)
