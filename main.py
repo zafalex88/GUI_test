@@ -6,7 +6,7 @@ username = getpass.getuser()
 
 #creating the window
 root = tk.Tk(className='square root', useTk=1)
-canvas1 = tk.Canvas(root, width= 500, height=400)
+canvas1 = tk.Canvas(root, width= 500, height=350)
 canvas1.pack()
 
 #creating labels
@@ -18,7 +18,7 @@ label2 = tk.Label(root, text="Calculate The Square Root")
 label2.config(font=('verdana', 18))
 canvas1.create_window(250, 70, window=label2)
 
-label3 = tk.Label(root, text='Enter any number: ')
+label3 = tk.Label(root, text='Enter a number: ')
 label3.config(font=('verdana', 12))
 canvas1.create_window(250, 120, window=label3)
 
@@ -47,6 +47,5 @@ canvas1.create_window(250, 200, window=button1)
 button2 = tk.Button(text='Exit', command=root.destroy)
 button2.config(bg='Black', fg='white', font=('verdana', 10, 'bold'))
 canvas1.create_window(250, 300, window=button2)
-
 
 root.mainloop()
