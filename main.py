@@ -43,4 +43,10 @@ button1 = tk.Button(text='Get the Square Root', command=getSquareRoot)
 button1.config(bg='red', fg='white', font=('verdana', 9, 'bold'))
 canvas1.create_window(250, 200, window=button1)
 
+#exit button
+button2 = tk.Button(text='Exit', command=root.destroy)
+button2.config(bg='Black', fg='white', font=('verdana', 10, 'bold'))
+canvas1.create_window(250, 300, window=button2)
+
+
 root.mainloop()
